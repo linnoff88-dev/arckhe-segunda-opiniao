@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="segundaopiniao" name="curso"/>
+<title>Segunda Opinión · INEMA.CLUB PRO</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/aula.css" rel="stylesheet"/>
+<script>(function(){try{var m=document.querySelector('meta[name=curso]');var CK=(m&&m.content)||'v5:curso';var s=JSON.parse(localStorage.getItem(CK));if(s&&s.prefs&&s.prefs.theme)document.documentElement.setAttribute('data-theme',s.prefs.theme);}catch(e){}})();</script>
+<!--
+  PROTOCOLO DE DESCOBERTA (formato-curso-v5, Passo 0 — respondido antes da geração):
+  - Público específico: gestores/líderes de equipe de pequenas e médias empresas, sem formação em tecnologia, que já lideram pessoas mas nunca usaram IA para isso.
+  - Profissões-alvo (≥2): gestora comercial · coordenador de operações · líder de equipe técnica.
+  - Familiaridade com tecnologia: uso básico (email, WhatsApp, planilha); zero experiência com IA de chat.
+  - Resultado prático esperado: sair sabendo aplicar os usos de IA para decisão, coach, comunicação, autoavaliação, reunião, desenvolvimento de pessoas, war-game de cenários, aprendizado e ritual semanal na próxima situação real de liderança.
+  - Tempo por sessão: 20 min, fim de expediente.
+-->
+<style>
+  .view{display:none}.view.active{display:block}
+  .lnav{max-width:1160px;margin:0 auto 5vh;padding:0 clamp(24px,5vw,60px);display:flex;justify-content:space-between;gap:12px}
+  .lnav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--line2);border-radius:12px;padding:12px 16px}
+  .lnav a:hover{border-color:var(--accent);color:var(--ink)}
+  #v-trilha .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,60px)}
+  #v-trilha .t-hero{position:relative;overflow:hidden;padding:20vh 0 8vh;border-bottom:1px solid var(--line)}
+  #v-trilha h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,6.4vw,72px);line-height:1;letter-spacing:-.025em;margin:0 0 22px}
+  #v-trilha h1 em{font-style:italic;color:var(--accent)}
+  #v-trilha .lead{font-family:var(--serif);font-size:clamp(19px,2.1vw,24px);line-height:1.5;color:var(--ink-soft);max-width:52ch;margin:0 0 30px}
+  #v-trilha section{padding:8vh 0}
+  #v-trilha .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  #v-trilha h2{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(26px,3.6vw,38px);margin:0 0 28px}
+  #v-trilha .aulas{display:grid;gap:14px}
+  #v-trilha .au{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  #v-trilha .au .num{font-family:var(--serif);font-size:30px;color:var(--accent);text-align:center}
+  #v-trilha .au h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 5px}
+  #v-trilha .au p{margin:0;color:var(--muted);font-size:14.5px}
+  #v-trilha .au .meta{font-family:var(--mono);font-size:11px;color:var(--accent);white-space:nowrap;text-align:right}
+  #v-trilha .au .prog{position:static;margin-top:10px;height:5px;border-radius:99px;background:var(--line);overflow:hidden;max-width:220px;width:auto}
+  #v-trilha .au .prog i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+  #v-trilha footer{max-width:1080px;margin:0 auto;padding:6vh clamp(24px,5vw,60px) 12vh;color:var(--faint);text-align:center;font-family:var(--serif);font-style:italic;border-top:1px solid var(--line)}
+</style>
+<link href="https://inematds.github.io/segunda-opiniao/curso.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/segunda-opiniao/en/curso.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/segunda-opiniao/es/curso.html" hreflang="es" rel="alternate"/></head>
+<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../curso.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../en/curso.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="curso.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<div class="bar"><div class="bar-inner">
+<span class="brand"><a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a><a class="course" href="landing.html">Segunda Opinión</a></span>
+<a class="back" href="#trilha" style="display:none">← ruta</a>
+<button class="pill" id="pill" style="display:none">0 leído</button>
+<button id="revbtn">revisar <span id="revn">0</span></button>
+<button id="jorbtn">recorrido</button>
+<button aria-label="Cómo funciona" id="helpbtn">?</button>
+<button aria-label="Preferencias de lectura" id="prefsbtn">Aa</button>
+<button id="themebtn">tema: oscuro</button>
+</div></div>
+<!-- ===== TRILHA ===== -->
+<section class="view" id="v-trilha">
+<header class="t-hero"><div class="wrap">
+<p class="kicker">Ruta única · para quienes lideran personas</p>
+<h1>Lunes <em>Opinión</em></h1>
+<p class="lead">Para gestores que nunca han usado IA para liderar: 5 clases cortas para decidir con más claridad, preparar conversaciones difíciles, comunicarse sin ruido y desarrollar personas, usando una IA de chat como consejera de confianza, nunca como sustituta.</p>
+</div></header>
+<section><div class="wrap">
+<div class="statcards"></div>
+<p class="eyebrow">Clases</p>
+<h2>Del impulso a una decisión meditada</h2>
+<div class="aulas">
+<a class="au on" data-aula="1" href="#aula-1">
+<div class="num">1</div>
+<div><h3>Deja de pedir textos. Empieza a pedir claridad.</h3><p>Termina sabiendo cómo preparar una solicitud de claridad sobre una decisión real que te preocupa ahora.</p><div class="prog"><i></i></div></div>
+<div class="meta">20 min · abrir →</div>
+</a>
+<a class="au" data-aula="2" href="#aula-2">
+<div class="num">2</div>
+<div><h3>La IA como espejo: conversaciones difíciles y autoevaluación</h3><p>Termina con una conversación difícil preparada y tu propio patrón como líder mapeado.</p><div class="prog"><i></i></div></div>
+<div class="meta">20 min · abrir →</div>
+</a>
+<a class="au" data-aula="3" href="#aula-3">
+<div class="num">3</div>
+<div><h3>Comunicación que no deja lugar a dudas</h3><p>Termina con un mensaje claro listo y la agenda de tu próxima reunión real.</p><div class="prog"><i></i></div></div>
+<div class="meta">18 min · abrir →</div>
+</a>
+<a class="au" data-aula="4" href="#aula-4">
+<div class="num">4</div>
+<div><h3>Desarrollar a las personas y simular lo que puede salir mal</h3><p>Termina con un plan de 30 días para alguien del equipo y un war-game de tu próximo cambio.</p><div class="prog"><i></i></div></div>
+<div class="meta">22 min · abrir →</div>
+</a>
+<a class="au" data-aula="5" href="#aula-5">
+<div class="num">5</div>
+<div><h3>Aprende más rápido y crea el hábito</h3><p>Termina habiendo hecho tu primera revisión semanal de liderazgo, guiada por la IA.</p><div class="prog"><i></i></div></div>
+<div class="meta">20 min · abrir →</div>
+</a>
+</div>
+</div></section>
+<footer><div class="wrap">Segunda Opinión · INEMA.CLUB PRO</div></footer>
+</section>
+<!-- ===================================================================
+     AULA 1 — FUNDAMENTO — Pare de pedir texto. Comece a pedir clareza.
+     =================================================================== -->
+<section class="view" data-aula="1" data-tempo="20min" id="v-aula-1">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Clase 1 de 5</p>
+<h1>Deja de pedir textos.<br/>Empieza a pedir <em>claridad</em>.</h1>
+<p class="promise">Al terminar esta clase, prepararás una solicitud de claridad para una decisión real que te preocupa ahora y sabrás exactamente qué hacer con la respuesta.</p>
+<p class="why">Ya enfrentas decisiones difíciles sin necesitar IA, pero decides a solas, bajo presión y sin tiempo para organizar lo que está en juego. La mayoría de los gestores usa IA solo para escribir correos bonitos. Aquí la usarás de otra manera: como alguien que te ayuda a ver el problema antes de decidir, no después.</p>
+<p class="cue"><span class="arw">↓</span> rol para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<ellipse cx="150" cy="185" fill="#000" opacity=".25" rx="70" ry="10"></ellipse>
+<path d="M100 60 Q150 20 200 60 L200 150 Q150 190 100 150 Z" fill="#1a1824" stroke="#7CE0C6" stroke-width="2.5"></path>
+<path d="M108 65 Q150 32 192 65 L192 145 Q150 178 108 145 Z" fill="none" opacity=".4" stroke="#7CE0C6" stroke-width="1"></path>
+<circle cx="150" cy="100" fill="none" r="18" stroke="#F2B45C" stroke-width="2"></circle>
+<path d="M142 100 a8 8 0 1 0 16 0" fill="none" stroke="#F2B45C" stroke-width="2"></path>
+<path d="M150 55 L150 42 M150 145 L150 158" stroke="#948DA6" stroke-width="1.5"></path>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="fundamento">
+<h2><span class="n">01</span> Un gerente débil usa la IA para producir. Un buen gerente la usa para pensar.</h2>
+<p>Casi todo el mundo que abre una IA de chat por primera vez pide lo mismo: "escríbeme esto". Es útil, pero es el uso más superficial que existe. El uso que realmente cambia el liderazgo es otro: pedirle a la IA que te ayude a <b>organizar un problema antes de decidir</b> — no solo a escribir después de haber decidido.</p>
+<p>Ejemplo aplicado: la gerente comercial de una distribuidora abrió un chat de IA pensando que solo iba a «escribir un mensaje bonito para el cliente», y descubrió en la práctica que el uso más valioso fue otro: ordenar sus ideas antes de decidir si renovaba o no el contrato de un proveedor problemático.</p>
+<div class="mobfig" data-mobfig="1"></div>
+<div class="qanchor"><p>Un buen gerente usa la IA para pensar mejor, no solo para producir más.</p></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="fundamento">
+<h2><span class="n">02</span> La respuesta de la IA no decide por ti: solo te da claridad</h2>
+<p>Un punto importante antes de seguir: valida antes de actuar, nunca sigas a ciegas. La IA puede enumerar riesgos que ya conocías, pero también puede mostrarte un punto ciego real que solo aparece porque alguien (o algo) observó el problema desde afuera.</p>
+<p>Ejemplo aplicado: el líder del equipo técnico pidió claridad sobre si despedir o no a un desarrollador junior con bajo rendimiento, y la IA señaló una opción que no había considerado: un plan formal de mentoría de 30 días antes de tomar cualquier decisión final.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<div class="quiz" data-answer="b">
+<p class="qk">Ponte a prueba</p><p class="q">Si la IA enumera 3 riesgos que ya conocías y 1 en el que nunca habías pensado, ¿qué debes hacer?</p>
+<button class="opt" data-k="a">Ignorar los 3 conocidos y enfocarse solo en lo nuevo.</button>
+<button class="opt" data-fb="O valor está exatamente no que você não enxergava sozinho — mas os outros 3 continuam reais." data-k="b">Considera los 4, prestando especial atención a lo que no habías visto.</button>
+<button class="opt" data-k="c">Descartarlo todo, ya que la IA puede equivocarse.</button>
+<p class="qfb"></p>
+</div>
+<div class="quiz" data-answer="b">
+<p class="qk">Ponte a prueba</p><p class="q">Después de que la IA organiza tu decisión, ¿quién decide realmente?</p>
+<button class="opt" data-k="a">La IA: vio más opciones que tú.</button>
+<button class="opt" data-fb="A IA clareia; a responsabilidade e o julgamento final continuam com quem lidera." data-k="b">Tú: la IA te da claridad, tú decides.</button>
+<p class="qfb"></p>
+</div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> Una solicitud de claridad tiene 5 partes fijas</h2>
+<p>Uno <span class="gterm" data-def="O pedido de texto que você digita pra IA. É só isso — o texto que você escreve pedindo algo, igual escrever uma mensagem." tabindex="0">pedido</span> la claridad siempre tiene la misma estructura, sin importar la decisión: (1) la situación real, (2) las opciones que existen de verdad, (3) el riesgo de cada una, (4) qué podrías estar ignorando y (5) qué validar antes de actuar. Memorizar estas 5 partes vale más que aprender de memoria cualquier prompt listo para usar.</p>
+<p>Ejemplo aplicado: el coordinador de operaciones, al decidir si cambia de proveedor de entregas, usa las 5 partes para no decidir solo por el precio y descubre, en la parte 4, que nunca preguntó cuánto tarda la reposición en caso de falla.</p>
+<p>Esto es una receta: escribe tu situación real en lugar de <b>[explique]</b>, mantén todo lo demás exactamente igual y envíaselo a la IA.</p>
+<div class="codewrap"><pre class="pcode">Estoy frente a esta decisión: [explique].
+Enumera:
+1. cuáles son las opciones reales
+2. los riesgos de cada opción
+3. qué estoy ignorando
+4. qué decisión parece mejor y por qué
+5. qué debería validar antes de actuar</pre></div>
+<div class="mobfig" data-mobfig="3"></div>
+<div class="qbefore-after">
+<div class="qba-col qba-before"><p class="qba-lbl">Antes</p><p class="qba-txt">"Voy a decidirlo mañana por la mañana, impulsivamente, sin pensarlo bien."</p></div>
+<div class="qba-col qba-depois"><p class="qba-lbl">Después</p><p class="qba-txt">Petición de claridad con las 5 partes completas, los riesgos y el punto ciego identificados.</p></div>
+<div class="qba-saldo"><b>Saldo:</b> la decisión queda con el riesgo y el punto ciego por escrito; no se toma por impulso.</div>
+</div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="practice" data-mode="prompt" data-practice="p1">
+<p class="pk">Practica ahora <span class="pcount">0/4 hecho</span></p>
+<h3 class="ph">Organiza una decisión real que te está inquietando</h3>
+<p class="pgoal">Meta: salir con una decisión real organizada en 5 partes. ~10 min.</p>
+<p class="psafe">Nada de esto decide por ti ni se filtra a nadie: es solo una conversación de prueba, solo tuya. ¿No te gustó la respuesta? Ajusta la situación que describiste y vuelve a pedirla.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Estoy frente a esta decisión: [explique].
+Enumera:
+1. cuáles son las opciones reales
+2. los riesgos de cada opción
+3. qué estoy ignorando
+4. qué decisión parece mejor y por qué
+5. qué debería validar antes de actuar</pre></div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> Abre un chat de IA (el que tengas disponible).</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> Describe una decisión real que te está preocupando esta semana.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Pega la solicitud para pedir claridad y reemplaza [explique] por tu situación.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Lee las 5 respuestas y marca lo que era nuevo para ti.</label></li>
+</ol>
+<p class="pdone">Acabas de organizar una decisión real antes de actuar: exactamente eso es lo que distingue la reacción del liderazgo.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; duas setas: uma sai da pessoa em direção a um papel (produzir texto); a outra volta da IA pra pessoa, num círculo (pensar melhor). O curso trata da segunda." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M40 70 L120 70" stroke="#948DA6" stroke-width="2"></path><path d="M112 63 L120 70 L112 77" fill="none" stroke="#948DA6" stroke-width="2"></path>
+<rect fill="none" height="30" rx="4" stroke="#948DA6" stroke-width="1.5" width="50" x="130" y="55"></rect>
+<text fill="#948DA6" font-family="monospace" font-size="9" x="45" y="60">producir</text>
+<path d="M180 130 A50 50 0 1 1 40 130" fill="none" stroke="#7CE0C6" stroke-width="2"></path>
+<path d="M48 138 L40 130 L50 126" fill="none" stroke="#7CE0C6" stroke-width="2"></path>
+<circle cx="110" cy="130" fill="none" r="14" stroke="#7CE0C6" stroke-width="2"></circle>
+<text fill="#7CE0C6" font-family="monospace" font-size="9" x="80" y="175">pensar mejor</text>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; uma balança: de um lado 'decisão automática' pesando pouco; do outro 'decisão informada', mais firme no chão." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M110 30 L110 150" stroke="#948DA6" stroke-width="2"></path>
+<path d="M50 70 L110 55 L170 70" fill="none" stroke="#948DA6" stroke-width="2"></path>
+<circle cx="50" cy="90" fill="none" r="20" stroke="#E0736F" stroke-width="1.5"></circle>
+<circle cx="170" cy="105" fill="none" r="24" stroke="#7CE0C6" stroke-width="2"></circle>
+<path d="M85 150 L135 150 L125 170 L95 170 Z" fill="none" stroke="#948DA6" stroke-width="1.5"></path>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; 5 caixas numeradas encaixando em sequência — as 5 partes fixas de um pedido de clareza." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<g fill="#15131d" stroke="#7CE0C6" stroke-width="1.5">
+<rect height="36" rx="6" width="36" x="20" y="40"></rect><rect height="36" rx="6" width="36" x="60" y="55"></rect>
+<rect height="36" rx="6" width="36" x="100" y="70"></rect><rect height="36" rx="6" width="36" x="140" y="85"></rect>
+<rect height="36" rx="6" width="36" x="30" y="120"></rect>
+</g>
+<text fill="#7CE0C6" font-family="monospace" font-size="12" x="34" y="62">1</text>
+<text fill="#7CE0C6" font-family="monospace" font-size="12" x="74" y="77">2</text>
+<text fill="#7CE0C6" font-family="monospace" font-size="12" x="114" y="92">3</text>
+<text fill="#7CE0C6" font-family="monospace" font-size="12" x="154" y="107">4</text>
+<text fill="#7CE0C6" font-family="monospace" font-size="12" x="44" y="142">5</text>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<nav class="lnav"><a href="#trilha">← ruta</a><a href="#aula-2">siguiente lección →</a></nav>
+<footer>Clase 1 de 5 · Segunda Opinión · INEMA.CLUB PRO</footer>
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Un gerente débil usa la IA para producir más texto; un buen gerente la usa para pensar mejor antes de decidir.</li>
+<li>Una solicitud de claridad tiene 5 partes fijas: situación, opciones, riesgos, punto ciego, validación.</li>
+<li>La IA no decide por ti: organiza lo que está en juego; la decisión final sigue siendo tuya.</li>
+<li>El beneficio más real suele estar en el punto ciego que no habías visto por tu cuenta.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu próximo paso</p>
+<p class="na-win">Acabas de transformar una decisión vaga en una decisión con riesgos y puntos ciegos identificados.</p>
+<p class="na-action">En los próximos 15 minutos, guarda la petición de claridad en un lugar fácil de encontrar (una nota en el celular, por ejemplo): volverás a usarla esta semana.</p>
+<p class="na-hook">En la próxima clase usarás la misma IA para preparar una conversación difícil con alguien del equipo, sin humillar a la persona ni restarle importancia al problema.</p>
+</div>
+<script id="cards-1" type="application/json">
+[
+  {"front":"Quais são as 5 partes que um pedido de clareza de decisão precisa ter?","back":"Situação, opções reais, riscos de cada uma, o que está sendo ignorado, e o que validar antes de agir."},
+  {"front":"Você tem uma decisão pra tomar amanhã de manhã e ainda não organizou nada. O que você faz hoje à noite, em 10 minutos?","back":"Monta o pedido de clareza com a situação real, pede as 5 partes e lê com atenção o que for novo."},
+  {"front":"Um gestor pediu pra IA 'escrever um comunicado bonito sobre a decisão que já tomei', sem ter organizado a decisão antes. O que ele pulou?","back":"Pulou clarear opções, riscos e ponto cego antes de decidir — usou a IA só pra produzir texto, não pra pensar."},
+  {"front":"Qual a diferença entre perguntar 'o que você acha dessa decisão?' e pedir as 5 partes do pedido de clareza?","back":"A pergunta aberta gera opinião solta; as 5 partes forçam um exame estruturado de opções, riscos e pontos cegos."},
+  {"front":"Escolha uma decisão real que você tem pra tomar esta semana no seu trabalho: qual seria a parte 4 (o que você pode estar ignorando)?","back":"Resposta pessoal — o exercício é notar que essa parte costuma ser a mais difícil de responder sozinho."}
+]
+</script>
+<!--
+COMPLETUDE aula-1 | tipo=FUNDAMENTO | steps=3
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (3/3)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (3/3)
+  [OK] practice           .practice[data-mode] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-1"> presente (1)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [OK] teste-se-FUND      tipo=FUNDAMENTO: presente (2 quiz data-fb)
+-->
+</section>
+<!-- ===================================================================
+     AULA 2 — FERRAMENTA — A IA como espelho: conversas difíceis e autoavaliação
+     =================================================================== -->
+<section class="view" data-aula="2" data-tempo="20min" id="v-aula-2">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Clase 2 de 5</p>
+<h1>La IA como <em>espejo</em></h1>
+<p class="promise">Al terminar esta clase, prepararás una conversación difícil con alguien del equipo —con firmeza y respeto— y usarás la IA para detectar tus propios puntos ciegos como líder.</p>
+<p class="why">Todo liderazgo tiene dos partes difíciles: corregir a alguien sin humillarlo y admitir en qué fallaste tú. Las dos suelen quedarse solo en la cabeza, sin ninguna estructura. La IA ayuda a preparar ambas con más calma que si lo haces a solas, en el calor del momento.</p>
+<p class="cue"><span class="arw">↓</span> rol para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<rect fill="#1a1824" height="150" rx="14" stroke="#7CE0C6" stroke-width="2.5" width="100" x="100" y="30"></rect>
+<rect fill="none" height="126" opacity=".4" rx="8" stroke="#7CE0C6" stroke-width="1" width="76" x="112" y="42"></rect>
+<circle cx="150" cy="95" fill="none" r="16" stroke="#ECE6D9" stroke-width="2"></circle>
+<path d="M126 140 Q150 118 174 140" fill="none" stroke="#ECE6D9" stroke-width="2"></path>
+<circle cx="150" cy="100" fill="none" opacity=".6" r="16" stroke="#F2B45C" stroke-width="1.5"></circle>
+<path d="M127 143 Q150 125 173 143" fill="none" opacity=".6" stroke="#F2B45C" stroke-width="1.5"></path>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">01</span> Antes de corregir a alguien, organiza lo que vas a decir</h2>
+<p>Preparar una conversación difícil con la IA evita dos trampas al mismo tiempo: humillar a la persona o restarle importancia al problema hasta que deje de quedar claro. Es una receta: describes la situación real y la IA te ayuda a armar una apertura firme y respetuosa.</p>
+<p>Ejemplo aplicado: la gerente comercial necesita hablar con un vendedor que lleva dos meses por debajo de la meta; describe la situación real a la IA antes de programar la conversación.</p>
+<p>Esto es una receta: cambia <b>[explique]</b> según tu situación real y envíalo exactamente así.</p>
+<div class="codewrap"><pre class="pcode">Tengo un colaborador con bajo rendimiento.
+La situación es esta: [explícala].
+Ayúdame a preparar una conversación firme, respetuosa y objetiva.
+Quiero corregir el comportamiento sin humillar a la persona.</pre></div>
+<div class="qerr">
+<p class="qk">Error común</p>
+<p class="qerr-txt"><b>Preparar la conversación por tu cuenta, memorizando frases hechas.</b> Suele bloquearte porque solo ensayaste tu parte y no previste cómo reaccionaría la otra persona. Cómo evitarlo: pídele a la IA que también simule las respuestas probables de la otra persona, no solo lo que dirías tú.</p>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">02</span> La IA señala el patrón; solo tú cambias el comportamiento</h2>
+<p>Cuando repites el ejercicio de autoevaluación en distintas situaciones, empieza a aparecer un patrón: algo que se repite, aunque cambien las personas y los temas. Leer el patrón es el primer paso; cambiar el comportamiento sigue siendo tarea tuya, no de la IA.</p>
+<p>Ejemplo aplicado: el líder del equipo técnico se dio cuenta, al repetir el ejercicio durante tres semanas seguidas, de que siempre evitaba hablar de los plazos vencidos; en vez de mencionar el retraso, cambiaba de tema.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">03</span> Después de la conversación, pregúntate frente al espejo</h2>
+<p>El mismo chat que te ayuda a preparar una conversación difícil también te ayuda a mirarte después de tenerla, sin ponerte a la defensiva ni ser indulgente contigo. Aquí empieza el verdadero desarrollo: la IA no hace la tarea, te ayuda a reconocer tus propios patrones.</p>
+<p>Ejemplo aplicado: el coordinador de operaciones perdió la paciencia en una reunión de equipo; en vez de dejarlo pasar, le describe la situación real a la IA y le pide una lectura honesta.</p>
+<div class="qsteps">
+<p class="qsk">Cómo pedir la autoevaluación</p>
+<ol>
+<li>Describe lo que pasó <b>sin ponerse a la defensiva</b>, como si se lo estuvieras contando a otra persona.</li>
+<li>Pide: en qué te fue bien y en qué podrías haber fallado.</li>
+<li>Pide: qué haría un líder más maduro en la misma situación.</li>
+<li>Elige 1 ajuste concreto para aplicar la próxima vez que ocurra algo parecido.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="practice" data-mode="prompt" data-practice="p2">
+<p class="pk">Practica ahora <span class="pcount">0/5 hecho</span></p>
+<h3 class="ph">Prepara una conversación difícil real y mírate en el espejo</h3>
+<p class="pgoal">Meta: salir con el inicio de la conversación listo y 1 patrón propio identificado. ~12 min.</p>
+<p class="psafe">No vas a enviarle nada a nadie ahora; solo vas a prepararlo a solas, sin apuro. ¿No te gustó el resultado? Pídele a la IA que lo rehaga con más detalles de la situación.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">1) Tenho um colaborador com baixo desempenho: [explique]. Prepare uma conversa firme, respeitosa e objetiva, sem humilhar a pessoa.
+
+2) Analise meu comportamento como líder nesta situação: [explique o que aconteceu]. Onde fui bem? Onde posso ter falhado? O que um líder mais maduro faria?</pre></div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> Piensa en una conversación difícil real que estás postergando.</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> Pega el primer prompt y describe la situación real.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Lee la sugerencia para iniciar la conversación.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Pega el segundo prompt sobre la última vez que una situación parecida te sacó de quicio.</label></li>
+<li><label><input data-ptask="5" type="checkbox"/> Anota 1 ajuste que llevarás a la próxima conversación.</label></li>
+</ol>
+<p class="pdone">Preparaste una conversación difícil real y ya sabes, antes de hablar con la persona, en qué sueles equivocarte.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; dois balões de fala: um representa o que você planeja dizer; o outro, a resposta mais provável da pessoa." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M20 40 h80 a8 8 0 0 1 8 8 v40 a8 8 0 0 1 -8 8 h-50 l-15 15 v-15 h-15 a8 8 0 0 1 -8 -8 v-40 a8 8 0 0 1 8 -8 Z" fill="none" stroke="#7CE0C6" stroke-width="1.5"></path>
+<path d="M110 100 h80 a8 8 0 0 1 8 8 v40 a8 8 0 0 1 -8 8 h-15 v15 l-15 -15 h-50 a8 8 0 0 1 -8 -8 v-40 a8 8 0 0 1 8 -8 Z" fill="none" stroke="#948DA6" stroke-width="1.5"></path>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; 3 pontos alinhados formando um padrão que se repete — o que a autoavaliação revela ao longo do tempo." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M30 150 L190 60" stroke="#37324a" stroke-dasharray="4 4" stroke-width="1"></path>
+<circle cx="40" cy="145" fill="none" r="9" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="110" cy="105" fill="none" r="9" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="180" cy="65" fill="none" r="9" stroke="#F2B45C" stroke-width="2"></circle>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; um espelho com reflexo levemente diferente da figura à frente — o 'eu' que só aparece quando alguém de fora aponta." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect fill="none" height="90" rx="8" stroke="#948DA6" stroke-width="1.5" width="55" x="40" y="30"></rect>
+<rect fill="none" height="90" rx="8" stroke="#7CE0C6" stroke-width="1.5" width="55" x="125" y="30"></rect>
+<circle cx="67" cy="60" fill="none" r="10" stroke="#948DA6" stroke-width="1.5"></circle>
+<path d="M50 95 Q67 80 84 95" fill="none" stroke="#948DA6" stroke-width="1.5"></path>
+<circle cx="152" cy="63" fill="none" r="10" stroke="#F2B45C" stroke-width="1.5"></circle>
+<path d="M135 96 Q152 84 169 96" fill="none" stroke="#F2B45C" stroke-width="1.5"></path>
+<path d="M100 75 L120 75" stroke="#7CE0C6" stroke-dasharray="3 3" stroke-width="1"></path>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<nav class="lnav"><a href="#trilha">← ruta</a><a href="#aula-3">siguiente lección →</a></nav>
+<footer>Clase 2 de 5 · Segunda Opinión · INEMA.CLUB PRO</footer>
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Preparar una conversación difícil con la IA evita dos trampas: humillar a la persona o restarle importancia al problema.</li>
+<li>Simular la probable respuesta de la otra persona evita que te bloquees cuando la conversación se aparte de lo acordado.</li>
+<li>Pedir una autoevaluación funciona como un espejo: la IA señala el patrón, pero solo tú puedes cambiar la conducta.</li>
+<li>El beneficio real aparece cuando el ejercicio se repite: ahí es cuando salen a la luz los patrones ocultos.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu próximo paso</p>
+<p class="na-win">Ya tienes preparada una conversación difícil y sabes qué patrón tuyo suele obstaculizarla.</p>
+<p class="na-action">En los próximos 15 minutos, agenda cuándo tendrás esta conversación de verdad: no la dejes preparada sin fijar una fecha.</p>
+<p class="na-hook">En la próxima clase usarás la misma lógica para transformar una idea confusa en un mensaje claro para el equipo y preparar una reunión que realmente termine en una decisión.</p>
+</div>
+<script id="cards-2" type="application/json">
+[
+  {"front":"Que duas coisas costumam dar errado quando alguém encara uma conversa difícil sem nenhum preparo?","back":"A pessoa sai humilhada, ou o problema real fica tão suavizado que ninguém entende o que precisa mudar de verdade."},
+  {"front":"Um líder ensaiou uma conversa sozinho, decorou as frases, e travou quando a pessoa reagiu diferente do esperado. O que faltou no preparo?","back":"Faltou pensar em como a outra pessoa reagiria de verdade — ele só decorou o próprio texto, sem prever a réplica dela."},
+  {"front":"Depois de uma reunião em que você perdeu a paciência, você pode seguir em frente sem pensar nisso ou pedir uma autoavaliação pela IA. Qual escolher, e por quê?","back":"Pedir a autoavaliação — é a única das duas opções que revela um padrão que se repete, em vez de deixá-lo se repetir sem ser notado."},
+  {"front":"Pense numa conversa difícil real que você está adiando com alguém da equipe: o que você diria na abertura, em 1 frase firme e respeitosa?","back":"Resposta pessoal — o exercício é notar que essa frase de abertura é exatamente o que o primeiro prompt desta aula ajuda a montar."}
+]
+</script>
+<!--
+COMPLETUDE aula-2 | tipo=FERRAMENTA | steps=3
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (3/3)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (3/3)
+  [OK] practice           .practice[data-mode] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-2"> presente (1)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); nenhum teste-se nesta aula
+-->
+</section>
+<!-- ===================================================================
+     AULA 3 — FERRAMENTA — Comunicação que não deixa margem para dúvida
+     =================================================================== -->
+<section class="view" data-aula="3" data-tempo="18min" id="v-aula-3">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Clase 3 de 5</p>
+<h1>Comunicación sin <em>margen</em> para la duda</h1>
+<p class="promise">Al terminar esta clase, transformarás una idea confusa en un mensaje claro para el equipo y tendrás la agenda de una reunión real, lista para terminar en una decisión.</p>
+<p class="why">Un mensaje confuso genera trabajo repetido, y una reunión sin agenda se convierte en una conversación que no decide nada. Ambas cosas consumen el tiempo de todos, y la solución es sencilla cuando usas la IA como revisora que exige claridad antes de que presiones «enviar».</p>
+<p class="cue"><span class="arw">↓</span> rol para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<path d="M90 100 L60 80 L60 130 Z" fill="#1a1824" stroke="#7CE0C6" stroke-width="2.5"></path>
+<path d="M90 85 L200 60" stroke="#7CE0C6" stroke-linecap="round" stroke-width="3"></path>
+<path d="M60 40 Q120 20 190 30 M55 160 Q130 200 210 175 M70 55 Q140 190 230 110" fill="none" opacity=".6" stroke="#37324a" stroke-width="1.5"></path>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">01</span> Una idea confusa en tu cabeza, un mensaje claro en la pantalla</h2>
+<p>Sabes lo que quieres decir, pero la primera versión escrita casi siempre sale más confusa que la idea que tienes en la cabeza. La IA es muy útil aquí: describes la idea sin ordenar y te devuelve una versión breve y directa; luego ajustas el tono antes de enviarla.</p>
+<p>Ejemplo aplicado: el coordinador de operaciones necesita avisarle al equipo sobre un cambio de turno; su primer intento de escribir el mensaje sonó a regaño, no a aviso.</p>
+<p>Esto es una receta: pega tu idea suelta en lugar de <b>[texto]</b> y pide la versión breve y clara.</p>
+<div class="codewrap"><pre class="pcode">Convierte esta idea en un mensaje breve, claro y motivador para mi equipo:
+[texto]</pre></div>
+<div class="qerr">
+<p class="qk">Error común</p>
+<p class="qerr-txt"><b>Enviar la primera versión sin volver a revisar el tono.</b> Un mensaje escrito con prisa suele sonar más duro de lo que realmente se pretende. Cómo evitarlo: pídele a la IA una segunda versión "más cordial, mismo contenido" antes de enviarlo.</p>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">02</span> Termina cada reunión con una frase: "decidimos esto"</h2>
+<p>Una reunión solo termina de verdad cuando alguien dice en voz alta qué se decidió; sin esa frase, la reunión sigue abierta en la cabeza de todos, y cada quien lo recuerda de manera diferente.</p>
+<p>Ejemplo aplicado: la gerente comercial cierra cada reunión de objetivos con una frase sencilla: «entonces, quedó decidido que...», antes de que todos salgan de la sala. En tu trabajo esto significa, por ejemplo: el <b>coordinador de operaciones</b> convirtiendo una reunión de turno en una decisión registrada, no en una conversación sin rumbo; y el <b>líder de equipo técnico</b> saliendo de la reunión de sprint con la prioridad de la semana definida, no implícita.</p>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">03</span> Una reunión sin agenda es una reunión sin decisiones</h2>
+<p>Una reunión que empieza sin agenda casi siempre termina sin decisiones: todos hablan, nadie decide y el tema vuelve la semana siguiente. Preparar la agenda antes, con la IA, resuelve esto en pocos minutos.</p>
+<p>Ejemplo aplicado: el líder del equipo técnico tenía una reunión de equipo que siempre se alargaba sin llegar a ninguna parte, hasta que empezó a preparar la agenda con anticipación.</p>
+<div class="qsteps">
+<p class="qsk">Los 5 elementos de una agenda que termina en una decisión</p>
+<ol>
+<li>Objetivo de la reunión, en 1 frase.</li>
+<li>Agenda breve: solo los puntos que necesitan conversarse, no comunicarse como avisos.</li>
+<li>Preguntas importantes que necesitan respuesta.</li>
+<li>Posibles conflictos o desacuerdos previsibles.</li>
+<li>La decisión que debe quedar tomada al final.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="practice" data-mode="tarefa" data-practice="p3">
+<p class="pk">Practica ahora <span class="pcount">0/6 hecho</span></p>
+<h3 class="ph">Revisa un mensaje real y prepara la agenda de tu próxima reunión</h3>
+<p class="pgoal">Meta: salir con un mensaje claro y una agenda de reunión listos para usar. ~10 min.</p>
+<p class="psafe">Esto todavía no cambia nada en la práctica; es solo un borrador del mensaje y de la agenda. ¿No quedó bien? Reescríbelo todas las veces que quieras antes de enviarlo o entrar a la sala.</p>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> Elige un mensaje real que necesitas enviarle al equipo esta semana.</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> Pega tu idea suelta en el prompt del Step 1 y pide una versión breve y clara.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Elige una reunión real que tendrás en los próximos días.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Escribe el objetivo de la reunión en 1 frase y enumera 3 preguntas importantes.</label></li>
+<li><label><input data-ptask="5" type="checkbox"/> Escribe la decisión que debe quedar tomada en esa reunión.</label></li>
+<li><label><input data-ptask="6" type="checkbox"/> Lleva el mensaje revisado y la agenda listos.</label></li>
+</ol>
+<p class="pdone">Estará listo cuando tengas el mensaje revisado y sepas, antes de entrar a la reunión, qué decisión debe salir de ella.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; um megafone emitindo uma linha reta única — versus linhas emaranhadas ao fundo, representando o ruído evitado." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M50 90 L30 75 L30 115 Z" fill="none" stroke="#7CE0C6" stroke-width="2"></path>
+<path d="M50 78 L150 60" stroke="#7CE0C6" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M40 30 Q100 10 160 25 M35 150 Q100 180 170 155" fill="none" opacity=".5" stroke="#37324a" stroke-width="1.5"></path>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; um carimbo caindo sobre a palavra decisão — a reunião só termina quando algo é registrado." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect fill="none" height="34" rx="6" stroke="#7CE0C6" stroke-width="2" width="80" x="70" y="50"></rect>
+<path d="M110 84 L110 110" stroke="#948DA6" stroke-dasharray="3 4" stroke-width="2"></path>
+<rect fill="none" height="36" rx="6" stroke="#F2B45C" stroke-width="2" width="110" x="55" y="112"></rect>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; um relógio com blocos de tempo definidos — cada bloco é 1 dos 5 elementos da pauta." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<circle cx="110" cy="100" fill="none" r="55" stroke="#948DA6" stroke-width="1.5"></circle>
+<path d="M110 100 L110 55" stroke="#7CE0C6" stroke-width="2"></path>
+<path d="M110 100 L145 115" stroke="#F2B45C" stroke-width="2"></path>
+<path d="M110 45 A55 55 0 0 1 155 70" fill="none" opacity=".5" stroke="#7CE0C6" stroke-width="4"></path>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<nav class="lnav"><a href="#trilha">← ruta</a><a href="#aula-4">siguiente lección →</a></nav>
+<footer>Clase 3 de 5 · Segunda Opinión · INEMA.CLUB PRO</footer>
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Una idea confusa en la cabeza casi siempre sale confusa por escrito; la IA ayuda a acortarla y aclararla antes de enviarla.</li>
+<li>Una reunión sin agenda tiende a terminar sin ninguna decisión.</li>
+<li>Una buena agenda tiene 5 elementos: objetivo, puntos, preguntas, conflictos previsibles y la decisión esperada.</li>
+<li>Una reunión solo termina de verdad cuando alguien dice en voz alta qué se decidió.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu próximo paso</p>
+<p class="na-win">Ya tienes un mensaje claro y una agenda de reunión listos para usar esta semana.</p>
+<p class="na-action">En los próximos 15 minutos, envía el mensaje revisado o confirma la fecha de la reunión con la agenda lista.</p>
+<p class="na-hook">En la próxima clase usarás la IA para desarrollar a alguien de tu equipo y simular, antes de actuar, qué puede salir mal en un cambio.</p>
+</div>
+<script id="cards-3" type="application/json">
+[
+  {"front":"Uma reunião toma 40 minutos e ninguém sai sabendo o que ficou combinado. O que provavelmente faltou antes dela começar?","back":"Faltou nomear, por escrito, o que a conversa precisava resolver antes de todo mundo entrar na sala."},
+  {"front":"Pense na sua próxima reunião real: escreva, em 1 frase cada, o objetivo dela e o que precisa sair decidido.","back":"Resposta pessoal — se as duas frases saíram rápido, sua pauta já tem a espinha dorsal pronta."},
+  {"front":"Você escreveu um aviso pra equipe com pressa e, relendo, percebeu que soou como bronca. O que fazer antes de enviar?","back":"Pedir à IA uma segunda versão mais cordial, mantendo o mesmo conteúdo — nunca mandar a primeira versão sem reler o tom."},
+  {"front":"Depois de uma reunião de metas, o que a gestora comercial faz antes de todo mundo sair da sala?","back":"Nomeia em voz alta a frase de decisão — 'então ficou decidido que...' — pra reunião não continuar em aberto na cabeça de cada um."}
+]
+</script>
+<!--
+COMPLETUDE aula-3 | tipo=FERRAMENTA | steps=3
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (3/3)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (3/3)
+  [OK] practice           .practice[data-mode] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-3"> presente (1)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); nenhum teste-se nesta aula
+-->
+</section>
+<!-- ===================================================================
+     AULA 4 — FERRAMENTA — Desenvolver pessoas e simular o que pode dar errado
+     =================================================================== -->
+<section class="view" data-aula="4" data-tempo="22min" id="v-aula-4">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Clase 4 de 5</p>
+<h1>Piensa los próximos <em>lances</em></h1>
+<p class="promise">Al terminar esta clase, prepararás un plan de desarrollo de 30 días para alguien del equipo y simularás, antes de actuar, qué podría salir mal en un cambio que necesitas implementar.</p>
+<p class="why">Evaluar a alguien sin convertirlo en un plan concreto no desarrolla a nadie. Y anunciar un cambio sin prever la resistencia de nadie es que te tome por sorpresa algo previsible. Ambas cosas se vuelven más seguras cuando piensas tus próximos movimientos antes de mover la pieza.</p>
+<p class="cue"><span class="arw">↓</span> rol para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<rect fill="none" height="120" rx="4" stroke="#7CE0C6" stroke-width="2" width="160" x="70" y="60"></rect>
+<g stroke="#37324a" stroke-width="1">
+<path d="M110 60 L110 180"></path><path d="M150 60 L150 180"></path><path d="M190 60 L190 180"></path>
+<path d="M70 100 L230 100"></path><path d="M70 140 L230 140"></path>
+</g>
+<circle cx="130" cy="120" fill="#1a1824" r="12" stroke="#F2B45C" stroke-width="2"></circle>
+<circle cx="170" cy="80" fill="#1a1824" r="12" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="90" cy="160" fill="#1a1824" r="12" stroke="#7CE0C6" stroke-width="2"></circle>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">01</span> De una evaluación vaga a un plan de 30 días</h2>
+<p>Decir «tiene que mejorar» no desarrolla a nadie: se convierte en un plan cuando nombras fortalezas, dificultades y acciones prácticas con un plazo. La IA ayuda a transformar una evaluación imprecisa en un plan de 30 días al que realmente puedes hacer seguimiento.</p>
+<p>Ejemplo aplicado: el líder del equipo técnico tiene un desarrollador junior con buena disposición, pero con dificultades para pedir ayuda antes de quedarse bloqueado; en vez de solo anotarlo en una evaluación, prepara un plan de 30 días con acciones prácticas.</p>
+<p>Esto es una receta: describe el perfil real en lugar de <b>[puntos fuertes, dificultades, función]</b>.</p>
+<div class="codewrap"><pre class="pcode">Tengo un profesional con este perfil:
+[fortalezas, dificultades, función].
+Crea un plan de desarrollo de 30 días con acciones prácticas.</pre></div>
+<div class="qsteps">
+<p class="qsk">Los pasos para transformar una evaluación en un plan</p>
+<ol>
+<li>Enumera las fortalezas reales de la persona, sin generalizar.</li>
+<li>Enumera las dificultades reales, con un ejemplo concreto de cada una.</li>
+<li>Convierte cada dificultad en 1–2 acciones prácticas.</li>
+<li>Define cómo vas a hacer seguimiento en 30 días.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">02</span> Simula la resistencia antes de anunciar el cambio</h2>
+<p>Antes de anunciar cualquier cambio —de meta, horario o proceso—, conviene simular quién podría resistirse y qué podría salir mal. Esto no es pesimismo: es llegar al anuncio sabiendo cómo responder a las objeciones más probables.</p>
+<p>Ejemplo aplicado: la gerente comercial necesita cambiar la regla de comisiones del equipo; antes de anunciarlo, le pide a la IA un war-game del cambio para saber quién se resistirá y por qué.</p>
+<div class="codewrap"><pre class="pcode">Voy a implementar este cambio en la empresa: [explique].
+Haz un war-game:
+1. quién puede resistirse
+2. qué puede salir mal
+3. qué objeciones pueden surgir
+4. cómo responder
+5. cómo ejecutarlo con el menor riesgo</pre></div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">03</span> Simular no es una excusa para no actuar</h2>
+<p>El war-game sirve para que actúes con menos miedo, no para convertirse en una excusa para volver a postergar el cambio. Después de simular, el siguiente paso siempre es fijar la fecha de ejecución, no pedir otra ronda de simulación.</p>
+<p>Ejemplo aplicado: el coordinador de operaciones simuló tres veces seguidas la resistencia al cambio de proveedor y todavía no había fijado una fecha; el propio ejercicio se convirtió en una forma de procrastinar. En tu trabajo esto significa, por ejemplo: la <b>gerente comercial</b> simulando la reacción al cambio de comisión una sola vez y dejando ya marcada la fecha del anuncio, en vez de volver a simularlo.</p>
+<div class="qerr">
+<p class="qk">Error común</p>
+<p class="qerr-txt"><b>Usar el war-game para aplazar la decisión, en vez de actuar.</b> Suele pasar porque simular da una sensación de progreso, sin el riesgo real de actuar de verdad. Cómo evitarlo: toda simulación termina con una fecha fijada; si no hay fecha, no terminó.</p>
+</div>
+<div class="mobfig" data-mobfig="3"></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<section class="practice" data-mode="prompt" data-practice="p4">
+<p class="pk">Practica ahora <span class="pcount">0/5 hecho</span></p>
+<h3 class="ph">Elabora un plan de 30 días y simula un cambio real</h3>
+<p class="pgoal">Meta: salir con 1 plan de desarrollo y 1 war-game listos. ~12 min.</p>
+<p class="psafe">Nada de esto se anuncia a nadie todavía: es solo tu borrador, para que luego decidas con más seguridad. ¿No quedó bien? Describe con más detalle el perfil o el cambio y vuelve a pedirlo.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">1) Tenho um profissional com este perfil: [pontos fortes, dificuldades, função]. Crie um plano de desenvolvimento de 30 dias com ações práticas.
+
+2) Vou implementar esta mudança: [explique]. Faça um war-game: quem resiste, o que pode dar errado, objeções, como responder, como executar com menor risco.</pre></div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> Elige a 1 persona real del equipo para ayudar a desarrollar.</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> Pega el primer prompt con su perfil.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Elige 1 cambio real que necesitas implementar.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Pega el segundo prompt con el cambio.</label></li>
+<li><label><input data-ptask="5" type="checkbox"/> Fija una fecha concreta para actuar en al menos 1 de los dos casos.</label></li>
+</ol>
+<p class="pdone">Terminaste con un plan de desarrollo real y un cambio simulado, ambos listos para convertirse en acciones, no solo en ideas.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; um caminho de 30 marcos até uma meta — o plano de desenvolvimento como percurso, não como veredito único." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<path d="M20 160 Q80 100 110 120 T200 50" fill="none" stroke="#37324a" stroke-dasharray="2 5" stroke-width="1.5"></path>
+<circle cx="20" cy="160" fill="none" r="7" stroke="#948DA6" stroke-width="2"></circle>
+<circle cx="110" cy="120" fill="none" r="7" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="200" cy="50" fill="none" r="10" stroke="#F2B45C" stroke-width="2"></circle>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; ramificações se abrindo a partir de um ponto — cada ramo é uma reação possível à mudança, mapeada antes de anunciar." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<circle cx="40" cy="100" fill="none" r="8" stroke="#7CE0C6" stroke-width="2"></circle>
+<path d="M48 100 L120 50 M48 100 L130 100 M48 100 L120 150" stroke="#948DA6" stroke-width="1.5"></path>
+<circle cx="125" cy="48" fill="none" r="6" stroke="#F2B45C" stroke-width="1.5"></circle>
+<circle cx="135" cy="100" fill="none" r="6" stroke="#F2B45C" stroke-width="1.5"></circle>
+<circle cx="125" cy="152" fill="none" r="6" stroke="#F2B45C" stroke-width="1.5"></circle>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; uma seta que sai da simulação e chega numa data marcada no calendário — simular termina em ação, não em nova simulação." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<circle cx="60" cy="100" fill="none" r="30" stroke="#948DA6" stroke-dasharray="3 4" stroke-width="1.5"></circle>
+<path d="M92 100 L150 100" stroke="#7CE0C6" stroke-width="2"></path>
+<path d="M142 92 L150 100 L142 108" fill="none" stroke="#7CE0C6" stroke-width="2"></path>
+<rect fill="none" height="45" rx="4" stroke="#F2B45C" stroke-width="2" width="50" x="155" y="75"></rect>
+<path d="M165 75 L165 65 M195 75 L195 65" stroke="#F2B45C" stroke-width="2"></path>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<nav class="lnav"><a href="#trilha">← ruta</a><a href="#aula-5">siguiente lección →</a></nav>
+<footer>Clase 4 de 5 · Segunda Opinión · INEMA.CLUB PRO</footer>
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>Una evaluación vaga no desarrolla a nadie: se convierte en un plan cuando incluye acciones prácticas con un plazo de 30 días.</li>
+<li>Simular la resistencia antes de anunciar un cambio evita que te tomen por sorpresa objeciones previsibles.</li>
+<li>El war-game existe para reducir el riesgo de actuar, no para convertirse en una excusa para volver a postergar el cambio.</li>
+<li>Después de simular, el siguiente paso siempre es fijar la fecha de ejecución.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu próximo paso</p>
+<p class="na-win">Terminaste con un plan de desarrollo real y un cambio simulado, listos para convertirse en acciones.</p>
+<p class="na-action">En los próximos 15 minutos, fija la fecha de ejecución de al menos 1 de los dos: el plan o el cambio.</p>
+<p class="na-hook">En la última clase cerrarás el ciclo: aprenderás a usar la IA para estudiar más rápido y crearás un ritual semanal sencillo para no perder lo que aprendiste aquí.</p>
+</div>
+<script id="cards-4" type="application/json">
+[
+  {"front":"O que transforma uma avaliação vaga ('ele precisa melhorar') num plano que realmente desenvolve alguém?","back":"Nomear pontos fortes, dificuldades e ações práticas com prazo — um plano de 30 dias, não uma frase solta."},
+  {"front":"Antes de anunciar uma mudança de processo, o que o war-game ajuda a fazer que anunciar direto não faz?","back":"Mapear quem vai resistir e as objeções prováveis antes do anúncio, pra já chegar com respostas prontas."},
+  {"front":"Um coordenador simulou a mesma mudança três vezes seguidas e ainda não marcou nenhuma data de execução. O que está acontecendo?","back":"O exercício virou um jeito de adiar — repetir a simulação não substitui abrir a agenda e escolher o dia de agir."},
+  {"front":"Escolha uma mudança real que você precisa anunciar: quem, no seu time, provavelmente resistiria primeiro — e por quê?","back":"Resposta pessoal — o exercício é notar que essa pergunta é exatamente o item 1 do war-game desta aula."}
+]
+</script>
+<!--
+COMPLETUDE aula-4 | tipo=FERRAMENTA | steps=3
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (3/3)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (3/3)
+  [OK] practice           .practice[data-mode] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-4"> presente (1)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é FERRAMENTA (obrigação não se aplica); nenhum teste-se nesta aula
+-->
+</section>
+<!-- ===================================================================
+     AULA 5 — PRÁTICA/INTEGRAÇÃO — Aprenda mais rápido e crie o hábito
+     =================================================================== -->
+<section class="view" data-aula="5" data-tempo="20min" id="v-aula-5">
+<header class="hero"><div class="hero-inner">
+<div>
+<p class="kicker">Clase 5 de 5</p>
+<h1>Aprende más rápido.<br/>Crea el <em>hábito</em>.</h1>
+<p class="promise">Al terminar esta clase, harás tu primera revisión semanal de liderazgo guiada por la IA y sabrás cuáles son las 3 preguntas que resumen todo lo que enseñó este curso.</p>
+<p class="why">Todo lo que aprendiste hasta aquí solo se convierte en hábito si tienes un ritual sencillo que lo sostenga; sin ritual, la primera semana ajetreada se lleva todo por delante. Esta última clase cierra el ciclo: menos uso puntual, más rutina de liderazgo.</p>
+<p class="cue"><span class="arw">↓</span> rol para estudiar</p>
+</div>
+<div class="herofig"><svg aria-hidden="true" fill="none" viewbox="0 0 300 240">
+<rect fill="#1a1824" height="130" rx="10" stroke="#7CE0C6" stroke-width="2.5" width="140" x="80" y="50"></rect>
+<path d="M80 85 L220 85" stroke="#7CE0C6" stroke-width="1.5"></path>
+<path d="M110 50 L110 35 M190 50 L190 35" stroke="#948DA6" stroke-width="2"></path>
+<circle cx="150" cy="140" fill="none" r="18" stroke="#F2B45C" stroke-width="2.5"></circle>
+</svg></div>
+</div></header>
+<div class="layout">
+<div class="col">
+<section class="step" data-fig="1" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">01</span> Un ritual semanal de 3 preguntas a la vez</h2>
+<p>Un ritual sencillo sostiene todo lo que practicaste en esta ruta: el lunes planifica prioridades, el miércoles revisa obstáculos y el viernes evalúa resultados. La IA ayuda haciendo una pregunta a la vez, para que no se convierta en un formulario largo que nadie termina.</p>
+<p>Ejemplo aplicado: el coordinador de operaciones reserva 10 minutos cada viernes para esta revisión; se volvió parte de la rutina, no una tarea extra.</p>
+<div class="qsteps">
+<p class="qsk">El ritual semanal, una pregunta a la vez</p>
+<ol>
+<li>Resultados de la semana.</li>
+<li>Problemas evitados.</li>
+<li>Decisiones pendientes.</li>
+<li>Personas que necesitan atención.</li>
+<li>Prioridad de la próxima semana.</li>
+</ol>
+</div>
+<div class="mobfig" data-mobfig="1"></div>
+<button class="readbtn" data-read="s1">marcar como leído</button>
+</section>
+<section class="step" data-fig="2" data-kind="ferramenta" data-versao="IA de chat de uso geral, jul/2026">
+<h2><span class="n">02</span> La IA como tutora particular de tu contexto</h2>
+<p>Puedes estudiar cualquier tema nuevo pidiéndole a la IA que lo explique teniendo en cuenta tu realidad: no una explicación genérica de un libro, sino una pensada para tu tipo de decisiones, equipo y negocio.</p>
+<p>Ejemplo aplicado: la gerente comercial quiere entender un nuevo concepto de gestión de metas; en vez de leer un artículo genérico, pide ejemplos pensados para el negocio, el equipo y la toma de decisiones.</p>
+<div class="codewrap"><pre class="pcode">Explícale este tema a un gerente con experiencia práctica que quiera aplicarlo de verdad:
+[tema]
+Incluye ejemplos de negocio, equipo y toma de decisiones.</pre></div>
+<div class="mobfig" data-mobfig="2"></div>
+<button class="readbtn" data-read="s2">marcar como leído</button>
+</section>
+<section class="step" data-fig="3" data-kind="fundamento">
+<h2><span class="n">03</span> Las 3 preguntas que lo resumen todo</h2>
+<p>Después de todo lo que practicaste en esta ruta, el líder que usa bien la IA siempre vuelve a 3 preguntas: ¿estoy tomando buenas decisiones? ¿Me estoy comunicando bien? ¿Estoy desarrollando a las personas o solo exigiendo resultados? La IA no reemplaza el liderazgo: aumenta la conciencia de quien lidera.</p>
+<p>Ejemplo aplicado: el líder del equipo técnico empezó a cerrar cada semana respondiendo estas 3 preguntas antes de dormir el viernes; le toma menos de 5 minutos y cambia lo que prioriza el lunes siguiente.</p>
+<div class="mobfig" data-mobfig="3"></div>
+<div class="qanchor"><p>La IA para gerentes no es solo productividad. Es claridad, toma de decisiones, comunicación, preparación y desarrollo humano.</p></div>
+<button class="readbtn" data-read="s3">marcar como leído</button>
+</section>
+<details>
+<summary>Profundicemos — un minic caso para conectar todo</summary>
+<p>La gerente comercial tuvo una semana difícil: perdió la paciencia con un vendedor (clase 2), pospuso un mensaje confuso sobre las metas (clase 3) y no decidió si cambia o no la regla de comisiones (clases 1 y 4). El viernes, hace el ritual semanal y llega a una conclusión sencilla: está comunicando razonablemente bien, pero evita decidir y evita la conversación difícil con el vendedor.</p>
+<p><b>Pregunta 1:</b> de las 3 preguntas finales, ¿cuál de ellas reprueba con más claridad la gerente comercial esta semana?<br/><b>Pregunta 2:</b> ¿cuál de las lecciones anteriores (1 a 4) debería volver a revisar primero?</p>
+<p><i>Respuestas comentadas:</i> reprueba en «¿estoy decidiendo bien?»: postergó tanto la decisión sobre la comisión como la conversación difícil, que también es una decisión postergada. Vale la pena volver a la Lección 1 (pedido de claridad) para la decisión sobre la comisión y a la Lección 2 (conversación difícil) para no seguir postergando al vendedor.</p>
+</details>
+<section class="practice" data-mode="tarefa" data-practice="p5">
+<p class="pk">Practica ahora <span class="pcount">0/5 hecho</span></p>
+<h3 class="ph">Haz tu primera revisión semanal de liderazgo</h3>
+<p class="pgoal">Meta: terminar la semana con las 5 preguntas respondidas. ~15 min.</p>
+<p class="psafe">Esto es solo para ti; no necesitas compartirlo con nadie. ¿No supiste responder alguna pregunta? Déjala pendiente y vuelve a ella la próxima semana.</p>
+<div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">Ayúdame a hacer mi revisión semanal como líder.
+Pregúntame una cosa a la vez sobre:
+1. resultados de la semana
+2. problemas evitados
+3. decisiones pendientes
+4. personas que necesitan atención
+5. prioridad de la próxima semana</pre></div>
+<ol class="psteps">
+<li><label><input data-ptask="1" type="checkbox"/> Elige un día fijo de la semana para esta revisión (sugerencia: viernes).</label></li>
+<li><label><input data-ptask="2" type="checkbox"/> Pega el prompt del ritual semanal en un chat de IA.</label></li>
+<li><label><input data-ptask="3" type="checkbox"/> Responde las 5 preguntas con calma, una a la vez.</label></li>
+<li><label><input data-ptask="4" type="checkbox"/> Vuelve a leer las 3 preguntas finales de esta clase y fíjate en qué aspecto tienes más dificultades.</label></li>
+<li><label><input data-ptask="5" type="checkbox"/> Agenda la misma revisión para la próxima semana.</label></li>
+</ol>
+<p class="pdone">Completaste tu primer ciclo de usar IA para liderar, no solo para producir.</p>
+</section>
+</div>
+<aside class="rail"><div class="railsticky">
+<div class="figstage">
+<div class="fig on" data-cap="&lt;b&gt;Fig.&lt;/b&gt; um calendário com 3 dias marcados (seg/qua/sex) — o ritual semanal em 3 pontos fixos." data-fig="1"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect fill="none" height="110" rx="8" stroke="#948DA6" stroke-width="1.5" width="140" x="40" y="45"></rect>
+<path d="M40 75 L180 75" stroke="#948DA6" stroke-width="1.5"></path>
+<circle cx="65" cy="100" fill="none" r="8" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="110" cy="120" fill="none" r="8" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="155" cy="100" fill="none" r="8" stroke="#F2B45C" stroke-width="2"></circle>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; um livro genérico ao lado de um livro com o nome da equipe escrito na capa — a mesma explicação, mas pensada pro seu contexto." data-fig="2"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<rect fill="none" height="80" rx="4" stroke="#948DA6" stroke-width="1.5" width="60" x="30" y="60"></rect>
+<rect fill="none" height="90" rx="4" stroke="#7CE0C6" stroke-width="2" width="65" x="120" y="55"></rect>
+<path d="M135 75 L170 75 M135 90 L170 90 M135 105 L160 105" stroke="#7CE0C6" stroke-width="1.5"></path>
+</svg></div>
+<div class="fig" data-cap="&lt;b&gt;Fig.&lt;/b&gt; 3 perguntas em círculo, sem início nem fim marcado — um ciclo de consciência que se repete, não uma lista que se esgota." data-fig="3"><svg aria-hidden="true" fill="none" viewbox="0 0 220 200">
+<circle cx="110" cy="100" fill="none" r="55" stroke="#7CE0C6" stroke-dasharray="6 6" stroke-width="2"></circle>
+<circle cx="110" cy="45" fill="#1a1824" r="9" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="155" cy="130" fill="#1a1824" r="9" stroke="#7CE0C6" stroke-width="2"></circle>
+<circle cx="65" cy="130" fill="#1a1824" r="9" stroke="#F2B45C" stroke-width="2"></circle>
+</svg></div>
+</div>
+<p class="railcap"></p>
+<div class="steps-ind"></div>
+<p class="sidenote">Resalta cualquier fragmento para convertirlo en una tarjeta de repaso.</p>
+</div></aside>
+</div>
+<nav class="lnav"><a href="#trilha">← ruta</a><a href="#trilha">completar ✓ →</a></nav>
+<footer>Clase 5 de 5 · Segunda Opinión · INEMA.CLUB PRO</footer>
+<div class="recap-autor">
+<p class="rak">Resumen</p>
+<ul>
+<li>La IA explica cualquier tema nuevo teniendo en cuenta tu contexto de negocio, equipo y toma de decisiones.</li>
+<li>Un ritual semanal sencillo, con una pregunta a la vez, sostiene lo que se practicó en esta ruta.</li>
+<li>Las 3 preguntas finales lo resumen todo: decisión, comunicación y desarrollo de personas.</li>
+<li>La IA no sustituye el liderazgo: aumenta la conciencia de quien lidera.</li>
+</ul>
+</div>
+<div class="next-action">
+<p class="nak">Tu próximo paso</p>
+<p class="na-win">Completaste tu primer ciclo de usar IA para liderar, no solo para producir.</p>
+<p class="na-action">En los próximos 15 minutos, programa la misma revisión semanal para el próximo viernes: el hábito solo existe si se repite.</p>
+<p class="na-hook">La próxima vez que aparezca una decisión difícil en tu trabajo, ya sabrás por dónde empezar: pedir claridad, no pedir un texto.</p>
+</div>
+<script id="cards-5" type="application/json">
+[
+  {"front":"Quais são as 3 perguntas finais que resumem toda a trilha Segunda Opinião?","back":"Estou decidindo bem? Estou comunicando bem? Estou desenvolvendo pessoas ou só cobrando resultado?"},
+  {"front":"Por que pedir pra IA explicar um assunto 'com exemplos de negócio, equipe e decisão' funciona melhor do que uma explicação genérica?","back":"Porque a explicação genérica fica na teoria; pedir o contexto força exemplos aplicáveis à sua realidade específica."},
+  {"front":"Um gestor fez o ritual semanal uma única vez e não repetiu mais. O que faltou pra virar hábito de verdade?","back":"Faltou marcar a data da próxima revisão logo depois da primeira — sem repetição fixa, o ritual não sustenta nada."}
+]
+</script>
+<!--
+COMPLETUDE aula-5 | tipo=PRATICA | steps=3
+  [OK] promise            .promise no cold-open (1)
+  [OK] why                .why após a promessa (1)
+  [OK] tempo              data-tempo no view (1)
+  [OK] exemplo-profissao  exemplo aplicado em 100% dos steps (3/3)
+  [OK] apoio-visual       figura conceitual legendada em 100% dos steps (3/3)
+  [OK] practice           .practice[data-mode] (exatamente 1)
+  [OK] psafe              .psafe dentro da prática (1)
+  [OK] pgoal-tempo        .pgoal com tempo declarado (1)
+  [OK] recap-autor        .recap-autor no fecho (1)
+  [OK] next-action        .next-action no fecho (1)
+  [OK] cards              <script id="cards-5"> presente (1)
+  [OK] anti-duplicacao    §11.3 — 3 testes passam (substring / forma / operação)
+  [N/A] teste-se-FUND     aula é PRATICA (obrigação não se aplica); nenhum teste-se nesta aula
+-->
+</section>
+<script src="../assets/curso.js"></script>
+</body>
+</html>
